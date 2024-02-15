@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Donate to Dog Adoption Centre</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+     /* background-image: url('bg_dogs.jpg');*/
+    }
+    
+    header {
+      background-color: plum;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    
+    h1 {
+      margin: 0;
+    }
+    
+    main {
+      margin: 20px;
+    }
+    
+    section {
+      margin-bottom: 30px;
+    }
+    
+    h2 {
+      margin-top: 0;
+    }
+    
+    form {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+    }
+    
+    .donation-amount {
+      display: flex;
+      align-items: center;
+    }
+    
+    input[type="text"] {
+      margin-left: 10px;
+      padding: 5px;
+      width: 100px;
+    }
+    
+    button[type="submit"] {
+      background-color: plum;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+    }
+    
+    button[type="submit"]:hover {
+      background-color: #555;
+    }
+    
+    footer {
+      background-color: #f9f9f9;
+      padding: 10px;
+      text-align: center;
+    }
+    img
+    {
+       opacity: 0.5;
+    }
+  </style>
+</head>
+<body>
+    <!--<img src="bg_dogs.jpg" width="100%" height="100%">-->
+
+  <header>
+    <h1>Donate to Dog Adoption Centre</h1>
+    
+  </header>
+
+  <main>
+    <section>
+      <h2>Help Us Save Dogs!</h2>
+      <p>Your donation can make a difference in the lives of countless dogs waiting for their forever homes. Every contribution helps provide food, shelter, medical care, and love to these precious animals. Please consider making a donation today.</p>
+    
+    </section>
+
+    <section>
+        <img src="bg_dogs.jpg" width="100%" height="100%">
+      <h2>Choose Your Donation Amount</h2>
+      <form action="donate.php" method="post">
+        <div class="donation-amount">
+          <label>
+            <input type="radio" name="amount" value="10" checked>
+            100rs
+          </label>
+        </div>
+        <div class="donation-amount">
+          <label>
+            <input type="radio" name="amount" value="25">
+            250rs
+          </label>
+        </div>
+        <div class="donation-amount">
+          <label>
+            <input type="radio" name="amount" value="50">
+            500rs
+          </label>
+        </div>
+        <div class="donation-amount">
+          <label>
+            <input type="radio" name="amount" value="100">
+            1000rs
+          </label>
+        </div>
+        <div class="donation-amount">
+          <label>
+            <input type="radio" name="amount" value="custom">
+            Custom Amount
+          </label>
+          <input type="text" name="custom-amount" placeholder="Enter custom amount">
+        </div>
+        <!--<center>
+        <br>
+        
+        <button type="submit">Donate</button>
+    </center>-->
+      </form>
+      <center>
+        <br>
+        
+        <button type="submit">Donate</button>
+    </center>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 Dog Adoption Centre. All rights reserved.</p>
+  </footer>
+</body>
+</html>
